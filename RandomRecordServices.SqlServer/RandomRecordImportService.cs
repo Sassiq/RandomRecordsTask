@@ -3,16 +3,33 @@ using System.Data.SqlClient;
 
 namespace RandomRecordServices.SqlServer
 {
+    /// <summary>
+    /// Importing service for <see cref="RandomRecord"/>.
+    /// </summary>
     public class RandomRecordImportService : IRandomRecordImportService
     {
         private readonly SqlConnection connection;
-        public event EventHandler<ImportedRecordEventArgs>? RecordImported;
+        public EventHandler<ImportedRecordEventArgs>? RecordImported;
 
+        /// <summary>
+        /// Initializes a new instance of <see cref="RandomRecordImportService"/> class.
+        /// </summary>
+        /// <param name="connectionString">Connection string to database.</param>
         public RandomRecordImportService(string connectionString)
         {
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                throw new ArgumentNullException(nameof(connectionString));
+            }
+
             this.connection = new SqlConnection(connectionString);
         }
 
+        /// <summary>
+        /// Imports collection of records into database.
+        /// </summary>
+        /// <param name="records">Collection of <see cref="RandomRecord"/></param>
+        /// <returns></returns>
         public async Task ImportRecords(IAsyncEnumerable<RandomRecord> records)
         {
             using (var sqlCommand = new SqlCommand("PostRecords", this.connection) { CommandType = CommandType.StoredProcedure })
