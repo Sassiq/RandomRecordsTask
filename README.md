@@ -1,6 +1,6 @@
 # RandomRecordsTask
 ## Short summary
-The application generates records, write them in files, combine these files into one and import these files into database using db stored procedures.
+The application generates records, writes them in files, combines these files into one and imports these files into database using db stored procedures.
 Records are represented in file in such format:
 ```
 03.03.2015||ZAwRbpGUiK||мДМЮаНкуКД||14152932||7,87742021||
