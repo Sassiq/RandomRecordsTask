@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using RandomRecordServices;
 using RandomRecordServices.SqlServer;
-using System.Diagnostics;
 
 namespace RandomRecordsTask.ConsoleApp
 {
