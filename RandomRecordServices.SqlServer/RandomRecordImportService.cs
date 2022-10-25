@@ -54,6 +54,8 @@ namespace RandomRecordServices.SqlServer
 
                     OnRecordImported(new ImportedRecordEventArgs() { CurrentRecordNumber = count++ });
                 }
+
+                await this.connection.CloseAsync();
             }
         }
 

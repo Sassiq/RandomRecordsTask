@@ -35,7 +35,7 @@ namespace RandomRecordsTask.ConsoleApp
         }
 
         /// <summary>
-        /// Combines RandomRecords files in "combinedFile.txt".
+        /// Combines RandomRecords files.
         /// </summary>
         /// <param name="numberOfFiles">Number of RandomRecords files.</param>
         /// <param name="combinedFileName">Name of the output combined file.</param>
