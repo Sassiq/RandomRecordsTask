@@ -35,7 +35,7 @@ namespace RandomRecordServices.SqlServer
                     sqlCommand.Parameters["@FloatingNumber"].Value = record.FloatingNumber;
                     await sqlCommand.ExecuteNonQueryAsync();
 
-                    OnRecordImported(new ImportedRecordEventArgs() { CurrentRecordNumber = count++, TotalRecordsNumber = 100_000 });
+                    OnRecordImported(new ImportedRecordEventArgs() { CurrentRecordNumber = count++ });
                 }
             }
         }

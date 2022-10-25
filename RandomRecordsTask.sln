@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomRecordsTask.Console", "RandomRecordsTask.Console\RandomRecordsTask.Console.csproj", "{A13FADEB-458F-4D5A-92AB-4B008C2C0E01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomRecordsTask.ConsoleApp", "RandomRecordsTask.ConsoleApp\RandomRecordsTask.ConsoleApp.csproj", "{A13FADEB-458F-4D5A-92AB-4B008C2C0E01}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomRecordServices", "RandomRecordServices\RandomRecordServices.csproj", "{7AD027A3-F437-4FDA-9EC1-EFBC76164F88}"
 EndProject
